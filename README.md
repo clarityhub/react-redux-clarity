@@ -1,5 +1,9 @@
 # React Redux Clarity
 
+[![NPM](https://nodei.co/npm/react-redux-clarity.png)](https://nodei.co/npm/react-redux-clarity/)
+
+[![CircleCI](https://circleci.com/gh/clarityhub/react-redux-clarity/tree/master.svg?style=svg&circle-token=bb12ad3dce1b089d3cfec99839a2bbd0eda5b322)](https://circleci.com/gh/clarityhub/react-redux-clarity/tree/master)
+
 React-redux-clarity provides helper utilities to standardize your reducers so that every action automatically has loading states and error handling.
 
 ## Usage
