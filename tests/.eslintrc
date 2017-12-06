@@ -1,5 +1,5 @@
 {
   "extends": [
-    "clarityhub/node-mocha"
+    "clarity-hub/node-mocha"
   ]
 }
