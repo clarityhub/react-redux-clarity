@@ -1,7 +1,5 @@
 # React Redux Clarity
 
-[![build status](https://gitlab.com/clairvoyance/react-redux-clarity/badges/master/build.svg)](https://gitlab.com/clairvoyance/react-redux-clarity/commits/master)
-
 React-redux-clarity provides helper utilities to standardize your reducers so that every action automatically has loading states and error handling.
 
 ## Usage
