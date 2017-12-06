@@ -31,7 +31,7 @@
     "chai": "^4.1.2",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "eslint-config-clarityhub": "^1.0.0",
+    "eslint-config-clarity-hub": "^1.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-preact": "^1.1.6",
     "eslint-plugin-import": "^2.7.0",

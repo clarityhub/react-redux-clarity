@@ -1504,9 +1504,9 @@ escodegen@^1.9.0:
   optionalDependencies:
     source-map "~0.5.6"
 
-eslint-config-clarityhub@^1.0.0:
+eslint-config-clarity-hub@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-clarityhub/-/eslint-config-clarityhub-1.0.0.tgz#9fb4ba6c17e2da35d4cb5cc16b6ea873afcae828"
+  resolved "https://registry.yarnpkg.com/eslint-config-clarity-hub/-/eslint-config-clarity-hub-1.0.0.tgz#ea325d83087f9ea2221e626089d09e7fdff60b8c"
 
 eslint-config-standard-jsx@^4.0.2:
   version "4.0.2"
