@@ -30,7 +30,7 @@ export const get = ({ id }) => (dispatch, getState) => clarity.action({
   },
 }).passthrough({
   customData: 'value',
-}).get(`https://api.clarityhub.io/accounts/users/${id}`, {}, READ);
+}).get(`https://api.clarityhub.io/accounts/users/${id}`, {/* your payload for the url here */}, READ);
 ```
 
 We support `get`, `put`, `patch`, `post`, and `delete` actions.
