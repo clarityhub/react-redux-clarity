@@ -50,7 +50,7 @@ export default (xhr) => class ClarityRequest {
       }, (err, res, body) => {
         let b = body;
 
-        if (res.responseType === 'application/json') {
+        if (res.responseType === 'json') {
           b = body ? JSON.parse(body) : {};
         }
 
