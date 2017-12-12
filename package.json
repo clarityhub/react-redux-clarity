@@ -1,7 +1,7 @@
 {
   "name": "react-redux-clarity",
   "description": "React and redux helper utilities for streamlining fetching",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "dist/index.js",
   "author": "Clarity Hub, Inc",
   "license": "MIT",
