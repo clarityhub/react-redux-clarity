@@ -15,14 +15,14 @@ export default class ClarityState {
     this.constants = constants;
   }
 
-  onUpdate(callback) {
+  reducer(callback) {
     return (state, action) => {
       if (typeof state === 'undefined') {
         state = {
           error: null,
           state: INITIAL,
           // eslint-disable-next-line
-          ...callback(undefined, { type: 'CLARITY_INIT' }),
+          ...callback(undefined, { type: '@@INIT' }),
         };
       }
 

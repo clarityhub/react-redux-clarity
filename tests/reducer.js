@@ -8,7 +8,7 @@ describe('react-redux-clarity reducer', () => {
     reducer = clarity.listen([
       'NON_CLARITY_CUSTOM_ACTION',
       'CUSTOM_ACTION',
-    ]).onUpdate((state = {
+    ]).reducer((state = {
       myCustomState: 'an inital value',
     }, action) => {
       switch (action.type) {
