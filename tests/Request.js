@@ -20,7 +20,7 @@ describe('react-redux-clarity request', () => {
   });
 
   it('makes a loading and success call for a get', (done) => {
-    const req = request.get('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION')
+    const req = request.get('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION');
     req.response.then(() => {
       expect(dispatch).to.have.been.calledTwice;
       done();
@@ -36,7 +36,7 @@ describe('react-redux-clarity request', () => {
 
     request = clarity.action({ dispatch }, { xhr });
 
-    const req = request.get('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION')
+    const req = request.get('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION');
     req.response.catch(() => {
       expect(dispatch).to.have.been.calledTwice;
       done();
@@ -64,7 +64,7 @@ describe('react-redux-clarity request', () => {
 
         request = clarity.action({ dispatch }, { xhr });
 
-        const req = request[type.toLowerCase()]('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION')
+        const req = request[type.toLowerCase()]('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION');
         req.response.then(() => { done(); }).catch(done);
       });
     });
@@ -72,7 +72,7 @@ describe('react-redux-clarity request', () => {
 
   it('transforms json payloads', (done) => {
     const xhr = function (options, cb) {
-      cb(null, { responseType: 'application/json', statusCode: 200 }, '{ "data": "value" }');
+      cb(null, { headers: {'content-type': 'application/json'}, responseType: 'application/json', statusCode: 200 }, '{ "data": "value" }');
     };
 
     request = clarity.action({ dispatch }, { xhr });
@@ -93,7 +93,7 @@ describe('react-redux-clarity request', () => {
 
     request = clarity.action({ dispatch }, { xhr });
 
-    const req = request.post('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION')
+    const req = request.post('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION');
 
     expect(req.cancel()).to.be.true;
     expect(abort).to.have.been.calledOnce;
@@ -108,7 +108,7 @@ describe('react-redux-clarity request', () => {
 
     request = clarity.action({ dispatch }, { xhr });
 
-    const req = request.post('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION')
+    const req = request.post('https://api.clarityhub.io', {}, 'MY_CUSTOM_ACTION');
     req.response.then(() => {
       expect(req.cancel()).to.be.false;
       expect(abort).to.not.have.been.called;
